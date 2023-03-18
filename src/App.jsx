@@ -1,8 +1,7 @@
 import axios from "axios";
 import "./App.css";
 
-const URL = "https://express-api-confirm-kandalog.onrender.com";
-// const URL = "http://localhost:4000";
+const URL = "https://simple-express-12.onrender.com";
 
 // セッションIDがクッキーにセットされる
 const test = async () => {
