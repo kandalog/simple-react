@@ -6,9 +6,7 @@ const URL = "https://express-api-confirm-kandalog.onrender.com";
 
 // セッションIDがクッキーにセットされる
 const test = async () => {
-  const res = await axios.get(URL, {
-    withCredentials: true,
-  });
+  const res = await axios.get(URL, {});
   console.log(res.data);
 };
 
