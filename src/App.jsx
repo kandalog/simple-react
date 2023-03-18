@@ -11,25 +11,17 @@ const test = async () => {
 
 // セッションIDがクッキーにセットされる
 const register = async () => {
-  const res = await axios.post(
-    URL + "/set",
-    {},
-    {
-      withCredentials: true,
-    }
-  );
+  const res = await axios.get(URL + "/set", {
+    withCredentials: true,
+  });
   console.log(res.data);
 };
 
 // セッションIDから値を取り出す
 const acquire = async () => {
-  const res = await axios.post(
-    URL + "/get",
-    {},
-    {
-      withCredentials: true,
-    }
-  );
+  const res = await axios.get(URL + "/get", {
+    withCredentials: true,
+  });
   console.log(res.data);
 };
 
